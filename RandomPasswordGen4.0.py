@@ -7,7 +7,6 @@ ani = {"cat", "dog", "cow", "sheep", "chicken", "pig", "snake", "horse", "bird",
        "frog", "bear", "fox", "goat", "donkey", "monkey", "fish", "tiger", "wolf", "dolphin", "whale", "deer",
        "mouse", "rabbit", "bull", "beetle", "spider", "penguin", "crocodile", "fox", "bat", "ant", "ram", "snail",
        "hawk", "scorpion", "liama", "butterfly", "fly", }
-
 minlen = 16
 
 clr1 = tuple(clr)
@@ -24,10 +23,6 @@ if len1 < minlen:
     pw1 = str(pw)
     len1 = len(pw1)
 else:
-    pw21 = pw1.replace('[', '')
-    pw22 = pw21.replace(']', '')
-    pw23 = pw22.replace(',', '')
-    pw24 = pw23.replace(' ', '')
-    pw25 = eval(pw24)
-
-print(pw25)
+    pw21 = pw1.replace('[', '').replace(']', '').replace(',', '').replace(' ', '')
+    pw22 = eval(pw21)
+print(pw22)
