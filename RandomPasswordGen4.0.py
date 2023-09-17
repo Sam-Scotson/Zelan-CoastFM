@@ -31,4 +31,3 @@ else:
     pw25 = eval(pw24)
 
 print(pw25)
-sys.stdout = open("C:/Users/eastt/onedrive/desktop/outputs/password.txt", "a")
